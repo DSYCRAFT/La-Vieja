@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
 
 <head>
     <title>La Vieja</title>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="LV.css">
+    <link rel="stylesheet" type="text/css" href="tic.css">
+
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+    <!-- JavaScript FILE-->
+    <script src="tic.js"></script>
+    
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,29 +35,29 @@
         </br>
 
         <!-- 3x3  grid of boxes-->
-        <input type="text" id="b1">
-        <input type="text" id="b2">
-        <input type="text" id="b3">
+        <input type="text" id="b1" onclick="myfunc_1(); myfunc();" readonly>
+        <input type="text" id="b2" onclick="myfunc_2(); myfunc();" readonly>
+        <input type="text" id="b3" onclick="myfunc_3(); myfunc();" readonly>
         <br>
         </br>
-        <input type="text" id="b4">
-        <input type="text" id="b5">
-        <input type="text" id="b6">
+        <input type="text" id="b4" onclick="myfunc_4(); myfunc();" readonly>
+        <input type="text" id="b5" onclick="myfunc_5(); myfunc();" readonly>
+        <input type="text" id="b6" onclick="myfunc_6(); myfunc();" readonly>
         <br>
         </br>
-        <input type="text" id="b7">
-        <input type="text" id="b8">
-        <input type="text" id="b9">
+        <input type="text" id="b7" onclick="myfunc_7(); myfunc();" readonly>
+        <input type="text" id="b8" onclick="myfunc_8(); myfunc();" readonly>
+        <input type="text" id="b9" onclick="myfunc_9(); myfunc();" readonly>
         <!-- Grid end here -->
         <br>
         <br>
         <br>
         <!-- Button to reset game -->
-        <button id="but">RESET</button>
+        <button id="but" onclick="reset()" >RESET</button>
         <br>
         <br>
         <!-- Space to show player turn -->
-        <p id="print"></p>
+        <p id="print"> </p>
      
     </div>
 
